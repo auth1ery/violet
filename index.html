@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>violet</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #000;
+    font-family: monospace;
+    color: white;
+    line-height: 1.4;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gradient {
+    background: linear-gradient(to right, #ffb6c1, #dda0dd); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  pre {
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-x: auto;
+  }
+
+  p {
+    max-width: 600px;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  a {
+    color: #ff69b4;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ff69b4;
+    width: 80%;
+    margin: 2em 0;
+  }
+
+  h1 {
+    color: #ff69b4;
+    margin-bottom: 1em;
+  }
+
+  details {
+    width: 100%;
+    margin-bottom: 1em;
+    background: #111;
+    border-left: 3px solid #ff69b4;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff69b4;
+    padding: 0.7em 1em;
+    list-style: none;
+  }
+
+  details p {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1em;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: #fff;
+  }
+
+  details[open] p {
+    max-height: 500px; 
+    padding: 0.5em 1em 1em 1em;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <pre>
+       _       _      _   
+      (_)     | |    | |  
+__   ___  ___ | | ___| |_  
+\ \ / / |/ _ \| |/ _ \ __| 
+ \ V /| | (_) | |  __/ |_  
+  \_/ |_|\___/|_|\___|\__|  
+    </pre>
+    <div>-- <span class="gradient">foundation</span> --</div>
+
+    <p>we archive the web</p>
+
+    <p>
+      instead of relying on the <a href="https://archive.org">internet archive</a> or <a href="https://archive.is">archive.is</a>, we manually scrape web pages off of neocities and nekoweb and archive them.
+    </p>
+
+    <p>
+      our mission is to archive the indie web as best as we can and help recover lost websites.
+    </p>
+
+    <hr>
+
+    <h1>FAQ</h1>
+
+    <details>
+      <summary>what should i do if i dont want my website scraped?</summary>
+      <p>
+        make a new file named "NOCONSENT.txt" and put the following: "noconsent". every website we go through, we always check for that single file. if we don't see that file exists, we will scrape your site and archive it here.
+      </p>
+    </details>
+
+    <details>
+      <summary>how will you scrape my site?</summary>
+      <p>
+        our volunteers scrape your site using cURL in a command prompt. we then will scrape your site every single month. learn more about curl <a href="https://curl.se/">here</a>.
+      </p>
+    </details>
+
+    <details>
+      <summary>can i request my website to be archived?</summary>
+      <p>
+        yes of course! you can submit a site link to us <a href="https://tally.so/r/Xx4GRg">here!</a>
+      </p>
+    </details>
+    
+    <small>operated by <a href="https://authguy.nekoweb.org">auth</a></small>
+  </div>
+</body>
+</html>

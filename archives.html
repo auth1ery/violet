@@ -20,34 +20,14 @@
 <body>
 <div class="container">
 <h1>archived sites</h1>
-<div id="archives"></div>
-<script>
-fetch('files.json')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('archives');
-    for (const folder in data) {
-      const det = document.createElement('details');
-      const sum = document.createElement('summary');
-      sum.textContent = folder;
-      det.appendChild(sum);
-      
-      const ul = document.createElement('ul');
-      data[folder].forEach(file => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = `sites/${folder}/${file}`;
-        a.download = file;
-        a.textContent = file;
-        li.appendChild(a);
-        ul.appendChild(li);
-      });
-      det.appendChild(ul);
-      container.appendChild(det);
-    }
-  })
-  .catch(err => console.error('Error loading archives:', err));
-</script>
+
+<details>
+  <summary>example.com</summary>
+  <ul>
+    <li><a href="https://drive.google.com/uc?export=download&id=1y648SZI10qgBujE97fohuZLBtgUEM9jI" download>2026-01-22.zip</a></li>
+  </ul>
+</details>
+
 </div>
 </body>
 </html>

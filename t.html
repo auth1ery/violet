@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>violet</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #000;
+    font-family: monospace;
+    color: white;
+    line-height: 1.4;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gradient {
+    background: linear-gradient(to right, #ffb6c1, #dda0dd); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  pre {
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-x: auto;
+  }
+
+  p {
+    max-width: 600px;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  a {
+    color: #ff69b4;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ff69b4;
+    width: 80%;
+    margin: 2em 0;
+  }
+
+  h1 {
+    color: #ff69b4;
+    margin-bottom: 1em;
+  }
+
+  details {
+    width: 100%;
+    margin-bottom: 1em;
+    background: #111;
+    border-left: 3px solid #ff69b4;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff69b4;
+    padding: 0.7em 1em;
+    list-style: none;
+  }
+
+  details p {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1em;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: #fff;
+  }
+
+  details[open] p {
+    max-height: 500px; 
+    padding: 0.5em 1em 1em 1em;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <p>you're in FULL control!</p>
+
+    <p>
+      if you dont want me (or us) to scrape your site OR we have already scraped your site and you want us to delete it, you can always mail to my <a href="mailto:skunkolee@gmail.com">email</a>. im usually active around the middle of the day, 11:00 AM -> 4:00 PM (MST).
+    </p>
+
+    <p>
+      we only archive your main page, not the whole site. if a page is password protected or private we will not scrape it (although it's very unlikely since we just scrape index.html, your home page) you can opt out anytime! we WILL (not may) respect the "NOCONSENT.txt" on your site and we will remember that! our only goal is to preserve the indie web as best as we can, not scrape your site so we can sell off it.
+    </p>
+
+    <p>
+      if we've made a mistake, im so sorry. we're humans. we manually scrape web pages (we dont, and never will, use bots or any automatic scraping)
+    </p>
+
+    <p>
+      we host all files on Google Drive for volunteer's convenience. however this may come off as sketchy and non trustworthy. if you're also worried about this, you can also ask if we can move your site to another hosting platform (dropbox, your own site, file garden, catbox)
+    </p>
+   
+    <small>operated by <a href="https://authguy.nekoweb.org">auth</a></small>
+  </div>
+</body>
+</html>
